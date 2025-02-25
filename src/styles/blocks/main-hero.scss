@@ -1,0 +1,68 @@
+@use "../helpers/" as *;
+
+.main-hero {
+  padding-block: fluid(16, 30);
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  &__content {
+    border-radius: rem(40);
+    max-width: rem(884);
+    position: relative;
+    padding: fluid(16, 60);
+    overflow: hidden;
+    &::before {
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      backdrop-filter: blur(4px);
+      -webkit-backdrop-filter: blur(4px);
+      background: var(--color-white-opacity);
+      filter: blur(0.5rem);
+      pointer-events: none;
+    }
+    &-inner {
+      z-index: 2;
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      row-gap: fluid(30, 206);
+    }
+    &-body {
+      font-size: fluid(24, 32);
+      p:not(:last-child) {
+        margin-bottom: fluid(8, 16);
+      }
+      h1 {
+        @include x-small {
+          text-align: center;
+        }
+      }
+    }
+    &-links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: rem(23);
+      @include x-small {
+        flex-direction: column;
+      }
+    }
+  }
+}
+
+.hero-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  column-gap: rem(30);
+  &__logo {
+  }
+  &__socials {
+    @include x-small {
+      display: none;
+    }
+  }
+}

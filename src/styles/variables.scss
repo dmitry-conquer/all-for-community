@@ -1,0 +1,26 @@
+@use "helpers" as *;
+
+:root {
+  --color-white: #ffffff;
+  --color-white-opacity: #ffffffb4;
+  --color-light: #fffbf5;
+  --color-dark: #08202d;
+  --color-green: #3c833d;
+  --color-light-green: #e8f8d3;
+  --color-blue: #2995d0;
+  --color-light-blue: #e7f3fa;
+  --color-orange: #f1832c;
+  --color-light-orange: #fdf0e5;
+
+  --font-family-base: "Inter", serif;
+  --font-family-accent: "Bricolage Grotesque", serif;
+
+  --text-middle: #{rem(24)};
+  --text-big: #{fluid(24, 28)};
+
+  --section-padding: #{fluid(20, 60)};
+  --section-padding-xl: #{fluid(20, 120)};
+
+  --container-width: #{rem(1830)};
+  --container-padding-x: #{rem(15)};
+}

@@ -1,0 +1,11 @@
+@use "../helpers/" as *;
+
+.section-header {
+  max-width: rem(1200);
+  margin: 0 auto;
+  text-align: center;
+  padding-bottom: fluid(16, 60);
+  p {
+    font-size: fluid(24, 28);
+  }
+}

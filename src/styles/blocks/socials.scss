@@ -1,0 +1,20 @@
+@use "../helpers/" as *;
+
+.socials {
+  display: flex;
+  align-items: center;
+  column-gap: fluid(16, 32);
+  &__item {
+    flex-shrink: 0;
+  }
+  &__link {
+    transition: opacity 0.3s ease;
+    @include hover {
+      opacity: 0.8;
+    }
+  }
+  &__icon {
+    width: rem(40);
+    height: rem(40);
+  }
+}

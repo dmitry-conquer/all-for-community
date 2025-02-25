@@ -1,0 +1,35 @@
+@use "../helpers/" as *;
+
+.section-row-header {
+  --left-part: #{rem(580)};
+  display: flex;
+  column-gap: rem(32);
+  @include large {
+    flex-direction: column;
+  }
+  &__heading {
+    flex: 0 0 var(--left-part);
+    @include large {
+      flex: 0 1 auto;
+    }
+  }
+  &__content {
+    flex: 0 1 auto;
+    font-size: var(--text-big);
+  }
+  &__links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: rem(24) fluid(20, 40);
+    @include large {
+      display: none;
+    }
+    &_mobile {
+      display: none;
+      @include large {
+        margin-top: rem(20);
+        display: flex;
+      }
+    }
+  }
+}

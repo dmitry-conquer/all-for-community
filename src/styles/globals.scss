@@ -1,0 +1,49 @@
+@use "helpers" as *;
+
+body {
+  font-family: var(--font-family-base);
+  color: var(--color-dark);
+  font-size: var(--text-middle);
+  line-height: 1.5;
+  background-color: var(--color-light);
+}
+
+.wrapper {
+  overflow: hidden;
+  position: relative;
+}
+
+h1, .h1, //
+h2, .h2,
+h3, .h3,
+h4, .h4,
+h5, .h5,
+h6, .h6 {
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+h1,
+.h1 {
+  font-size: fluid(48, 80);
+  margin-bottom: fluid(24, 32);
+  line-height: 1;
+}
+
+h2,
+.h2 {
+  font-size: fluid(40, 68);
+  margin-bottom: fluid(24, 32);
+}
+
+h3,
+.h3 {
+  font-size: rem(36);
+  margin-bottom: fluid(16, 24);
+}
+
+.container {
+  max-width: var(--container-width);
+  margin: 0 auto;
+  padding: 0 var(--container-padding-x);
+}

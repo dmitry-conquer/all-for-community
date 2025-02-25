@@ -1,0 +1,60 @@
+@use "../helpers/" as *;
+
+.image-links {
+  padding-top: var(--section-padding);
+  &__body {
+    background-color: var(--color-light-green);
+    border-radius: rem(40);
+  }
+  &__items {
+    max-width: rem(1480);
+    margin: 0 auto;
+    padding-block: fluid(30, 70);
+    padding-inline: rem(10);
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: center;
+    gap: rem(24) fluid(20, 100);
+    @include small {
+      grid-template-columns: 1fr;
+    }
+  }
+}
+
+.link-image {
+  padding-inline: rem(16);
+  border-radius: rem(20);
+  overflow: hidden;
+  height: fluid(220, 300);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  transition: transform 0.4s ease;
+  @include hover {
+    transform: scale(1.04);
+  }
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: rem(20);
+    right: rem(20);
+    width: rem(60);
+    height: rem(60);
+    background-image: url("data:image/svg+xml,%3Csvg%20width%3D%2268%22%20height%3D%2260%22%20viewBox%3D%220%200%2068%2060%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Cpath%20d%3D%22M44.9304%2031.1688L36.527%2022.7655C36.3692%2022.6077%2036.1552%2022.519%2035.932%2022.519C35.7089%2022.519%2035.4949%2022.6077%2035.3371%2022.7655C35.1793%2022.9233%2035.0907%2023.1373%2035.0907%2023.3604C35.0907%2023.5836%2035.1793%2023.7976%2035.3371%2023.9554L42.3068%2030.9234H24.1673C23.9445%2030.9234%2023.7307%2031.012%2023.5731%2031.1696C23.4155%2031.3272%2023.327%2031.5409%2023.327%2031.7638C23.327%2031.9867%2023.4155%2032.2004%2023.5731%2032.358C23.7307%2032.5156%2023.9445%2032.6041%2024.1673%2032.6041H42.3068L35.3371%2039.5722C35.1793%2039.73%2035.0907%2039.944%2035.0907%2040.1671C35.0907%2040.3903%2035.1793%2040.6043%2035.3371%2040.7621C35.4949%2040.9199%2035.7089%2041.0085%2035.932%2041.0085C36.1552%2041.0085%2036.3692%2040.9199%2036.527%2040.7621L44.9304%2032.3587C45.0086%2032.2807%2045.0707%2032.188%2045.1131%2032.0859C45.1554%2031.9838%2045.1772%2031.8743%2045.1772%2031.7638C45.1772%2031.6533%2045.1554%2031.5438%2045.1131%2031.4417C45.0707%2031.3396%2045.0086%2031.2469%2044.9304%2031.1688Z%22%20fill%3D%22white%22%2F%3E%3Ccircle%20cx%3D%2234%22%20cy%3D%2230%22%20r%3D%2229.5%22%20stroke%3D%22white%22%2F%3E%3C%2Fsvg%3E");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+  }
+  &__content {
+  }
+  &__title {
+    color: var(--color-white);
+    margin-bottom: 0;
+    font-weight: 600;
+    text-align: center;
+  }
+}
