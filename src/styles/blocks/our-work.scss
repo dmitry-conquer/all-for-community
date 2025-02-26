@@ -1,7 +1,7 @@
 @use "../helpers/" as *;
 
 .our-work {
-  padding-block: var(--section-padding);
+  padding: var(--section-padding) 0;
   &__body {
     margin-top: fluid(20, 40);
     display: flex;

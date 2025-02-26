@@ -1,0 +1,43 @@
+@use "../helpers/" as *;
+
+.qr {
+  &__body {
+    display: flex;
+    align-items: center;
+    gap: rem(24);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: rem(20);
+    overflow: hidden;
+    padding: fluid(16, 110) fluid(16, 74);
+    @include small {
+      flex-direction: column;
+    }
+  }
+  &__code {
+    flex: 0 1 rem(360);
+    @include small {
+      flex: 0 1 100%;
+      padding: 0 rem(30);
+    }
+  }
+  &__content {
+    max-width: rem(1185);
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    row-gap: fluid(24, 74);
+    @include small {
+      align-items: stretch;
+    }
+  }
+  &__words {
+    font-size: fluid(40, 120);
+    line-height: 1;
+    font-family: var(--font-family-decoration);
+    color: var(--color-white);
+    text-align: center;
+  }
+}

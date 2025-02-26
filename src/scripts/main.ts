@@ -1,3 +1,6 @@
 import "../styles/main.scss";
+import Sliders from "./components/Sliders";
 
-document.addEventListener("DOMContentLoaded", () => {});
+document.addEventListener("DOMContentLoaded", () => {
+  new Sliders();
+});

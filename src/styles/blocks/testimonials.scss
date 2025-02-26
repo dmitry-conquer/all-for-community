@@ -1,0 +1,90 @@
+@use "../helpers/" as *;
+
+.testimonials {
+  padding: var(--section-padding) 0;
+  h2 {
+    text-align: center;
+    margin-bottom: fluid(24, 60);
+  }
+  &__container {
+    max-width: rem(1343);
+  }
+  &__slide {
+    display: flex;
+    border-radius: rem(20);
+    overflow: hidden;
+    @include small {
+      flex-direction: column;
+    }
+  }
+  &__slide-image {
+    flex: 0 0 43%;
+    @include small {
+      flex: 0 1 auto;
+    }
+  }
+  &__slide-content {
+    background-color: var(--color-light-orange);
+    padding: fluid(16, 24);
+    p:not(:last-child) {
+      margin-bottom: rem(15);
+    }
+    strong,
+    b {
+      display: block;
+      margin-top: fluid(16, 24);
+      font-size: rem(18);
+    }
+  }
+  &__links {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: fluid(24, 60);
+    gap: rem(24) fluid(24, 80);
+    @include x-small {
+      flex-direction: column;
+    }
+  }
+}
+
+.testimonials-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: rem(20);
+  margin-top: rem(24);
+  &__button {
+    z-index: 50;
+    position: relative;
+    width: rem(60);
+    height: rem(60);
+    &_prev {
+      transform: rotate(180deg);
+    }
+    &_next {
+    }
+    svg {
+      transition: color 0.3s ease;
+      color: var(--color-gray);
+      @include hover {
+        color: var(--color-orange);
+      }
+    }
+  }
+  &__pagination {
+    .swiper-pagination-bullet {
+      transition: all 0.3s ease;
+      width: rem(20);
+      height: rem(20);
+      border: 1px solid var(--color-orange);
+      background-color: var(--color-white);
+      opacity: 1;
+      border-radius: rem(100);
+    }
+    .swiper-pagination-bullet.swiper-pagination-bullet-active {
+      width: rem(40);
+      background-color: var(--color-orange);
+    }
+  }
+}

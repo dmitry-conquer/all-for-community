@@ -1,11 +1,28 @@
 @use "../helpers/" as *;
 
 .available-services {
-  padding-block: var(--section-padding);
+  padding-top: var(--section-padding-xl);
   &__header {
     margin-bottom: fluid(24, 32);
+    display: flex;
+    align-items: center;
+    gap: fluid(24, 32) rem(32);
+    @include x-large {
+      flex-direction: column;
+      align-items: stretch;
+    }
   }
   &__header-heading {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    flex: 0 0 rem(580);
+    @include x-large {
+      flex: 0 1 auto;
+    }
+    h2 {
+      line-height: 1.5;
+    }
   }
   &__header-content {
   }
@@ -40,12 +57,28 @@
     background-color: var(--color-light-orange);
   }
   &_reverse {
+    flex-direction: row-reverse;
+    @include small {
+      flex-direction: column;
+    }
+  }
+  &_big-image {
+    .available-service__image {
+      flex: 0 1 75%;
+      @include large {
+        flex: 0 1 50%;
+      }
+    }
   }
   &__image {
     flex: 0 1 50%;
     height: 100%;
+    min-height: rem(240);
     border-radius: rem(20);
     overflow: hidden;
+    img {
+      min-height: rem(240);
+    }
     @include small {
       flex: 0 1 auto;
       max-height: rem(340);
@@ -59,6 +92,9 @@
     padding: fluid(16, 24);
     @include small {
       flex: 0 1 auto;
+    }
+    p:not(:last-child) {
+      margin-bottom: rem(10);
     }
   }
 }
