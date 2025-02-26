@@ -1,3 +1,144 @@
-<header class="header">
-  <div class="header__container"></div>
+<header class="header header_home" data-js-header>
+  <div class="header__container container">
+    <a href="/" class="header__logo-link" title="Back to home page">
+      <img src="/public/images/logo.svg" alt="Logo" width="257" height="90" class="header__logo" />
+    </a>
+    <ul class="header__socials socials">
+      <li class="socials__item">
+        <a href="#" class="socials__link">
+          <img src="/public/images/facebook.svg" alt="facebook" class="socials__icon" />
+        </a>
+      </li>
+      <li class="socials__item">
+        <a href="#" class="socials__link">
+          <img src="/public/images/facebook.svg" alt="facebook" class="socials__icon" />
+        </a>
+      </li>
+      <li class="socials__item">
+        <a href="#" class="socials__link">
+          <img src="/public/images/facebook.svg" alt="facebook" class="socials__icon" />
+        </a>
+      </li>
+      <li class="socials__item">
+        <a href="#" class="socials__link">
+          <img src="/public/images/facebook.svg" alt="facebook" class="socials__icon" />
+        </a>
+      </li>
+    </ul>
+    <div class="header__button-wrapper">
+      <span class="header__button-label">MENU</span>
+      <button
+        class="header__button"
+        data-js-header-button-open
+        type="button"
+        aria-expanded="false"
+        aria-label="Open menu"
+        title="Open menu"
+        aria-controls="header-overlay"
+      >
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </div>
+  <div class="header__overlay" id="header-overlay" data-js-header-overlay>
+    <div class="header__overlay-inner">
+      <button
+        class="header__button header__button_close"
+        data-js-header-button-close
+        type="button"
+        aria-expanded="false"
+        aria-label="Close menu"
+        title="Close menu"
+        aria-controls="header-overlay"
+      >
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <nav class="header__menu">
+        <ul class="header__menu-list">
+          <li class="header__menu-item">
+            <a href="/" class="header__menu-link">Home</a>
+          </li>
+          <li class="header__menu-item menu-item-has-children">
+            <a href="/about" class="header__menu-link">About us</a>
+            <ul class="sub-menu header__menu-sublist">
+              <li class="header__menu-subitem">
+                <a href="#" class="header__menu-sublink">Our mission</a>
+              </li>
+              <li class="header__menu-subitem">
+                <a href="#" class="header__menu-sublink">Our work</a>
+              </li>
+              <li class="header__menu-subitem">
+                <a href="#" class="header__menu-sublink">Our story</a>
+              </li>
+            </ul>
+          </li>
+          <li class="header__menu-item menu-item-has-children">
+            <a href="/about" class="header__menu-link">About us</a>
+            <ul class="sub-menu header__menu-sublist">
+              <li class="header__menu-subitem">
+                <a href="#" class="header__menu-sublink">Our mission</a>
+              </li>
+              <li class="header__menu-subitem">
+                <a href="#" class="header__menu-sublink">Our work</a>
+              </li>
+              <li class="header__menu-subitem">
+                <a href="#" class="header__menu-sublink">Our story</a>
+              </li>
+            </ul>
+          </li>
+          <li class="header__menu-item menu-item-has-children">
+            <a href="/about" class="header__menu-link">About us</a>
+            <ul class="sub-menu header__menu-sublist">
+              <li class="header__menu-subitem">
+                <a href="#" class="header__menu-sublink">Our mission</a>
+              </li>
+              <li class="header__menu-subitem">
+                <a href="#" class="header__menu-sublink">Our work</a>
+              </li>
+              <li class="header__menu-subitem">
+                <a href="#" class="header__menu-sublink">Our story</a>
+              </li>
+            </ul>
+          </li>
+          <li class="header__menu-item">
+            <a href="/services" class="header__menu-link">Donate</a>
+          </li>
+          <li class="header__menu-item">
+            <a href="/portfolio" class="header__menu-link">Contact us</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="header__contacts">
+        <a href="">(000)000-0000</a>
+        <a href="">aaa@gmail.com</a>
+        <p>000 Street, State, ZIP</p>
+      </div>
+      <ul class="header__overlay-socials socials">
+        <li class="socials__item">
+          <a href="#" class="socials__link">
+            <img src="/public/images/facebook.svg" alt="facebook" class="socials__icon" />
+          </a>
+        </li>
+        <li class="socials__item">
+          <a href="#" class="socials__link">
+            <img src="/public/images/facebook.svg" alt="facebook" class="socials__icon" />
+          </a>
+        </li>
+        <li class="socials__item">
+          <a href="#" class="socials__link">
+            <img src="/public/images/facebook.svg" alt="facebook" class="socials__icon" />
+          </a>
+        </li>
+        <li class="socials__item">
+          <a href="#" class="socials__link">
+            <img src="/public/images/facebook.svg" alt="facebook" class="socials__icon" />
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
 </header>

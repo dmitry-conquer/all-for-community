@@ -5,12 +5,32 @@
   &__body {
     background-color: var(--color-light-green);
     border-radius: rem(40);
+    position: relative;
+    overflow: hidden;
+  }
+  &__dec {
+    font-size: fluid(20, 200);
+    color: var(--color-white);
+    font-family: var(--font-family-decoration);
+    position: absolute;
+    line-height: 1;
+    letter-spacing: -10px;
+    @include large {
+      display: none;
+    }
+    &_left {
+      left: -1%;
+      top: -15%;
+    }
+    &_right {
+      right: 0;
+      bottom: -15%;
+    }
   }
   &__items {
     max-width: rem(1480);
     margin: 0 auto;
-    padding-block: fluid(30, 70);
-    padding-inline: rem(10);
+    padding: fluid(30, 70) rem(10);
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     justify-content: center;

@@ -1,5 +1,9 @@
 @use "helpers" as *;
 
+html.is-lock {
+  overflow: hidden;
+}
+
 body {
   font-family: var(--font-family-base);
   color: var(--color-dark);
@@ -22,6 +26,7 @@ h6, .h6 {
   font-weight: 700;
   line-height: 1.2;
   margin-bottom: fluid(16, 24);
+  font-family: var(--font-family-accent);
 }
 
 h1,
@@ -49,6 +54,13 @@ h4,
 h5,
 .h5 {
   font-size: fluid(32, 36);
+}
+
+a:not([class]) {
+  transition: color 0.3s ease;
+  @include hover {
+    color: var(--color-orange);
+  }
 }
 
 .container {

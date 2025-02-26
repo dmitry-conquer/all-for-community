@@ -2,6 +2,7 @@
 
 :root {
   --color-white: #ffffff;
+  --color-black: #000000;
   --color-white-opacity: #ffffffb4;
   --color-light: #fffbf5;
   --color-dark: #08202d;
@@ -12,13 +13,15 @@
   --color-orange: #f1832c;
   --color-light-orange: #fdf0e5;
   --color-gray: #C0C0C0;
+  --color-blue-overlay: #051f38d9;
 
   --font-family-base: "Inter", serif;
   --font-family-accent: "Bricolage Grotesque", serif;
   --font-family-decoration: "Nothing You Could Do", serif;
 
-  --text-middle: #{rem(24)};
   --text-big: #{fluid(24, 28)};
+  --text-middle: #{rem(24)};
+  --text-small: #{rem(16)};
 
   --section-padding: #{fluid(20, 60)};
   --section-padding-xl: #{fluid(20, 120)};
