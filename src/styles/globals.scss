@@ -23,8 +23,9 @@ body {
     background-position: top center;
     background-repeat: no-repeat;
     background-size: cover;
-    &:not(.main-home) {
-      padding-top: fluid(190, 206);
+    padding-top: fluid(190, 206);
+    &.main-home {
+      padding-top: 0;
     }
   }
 }

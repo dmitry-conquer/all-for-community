@@ -1,10 +1,25 @@
 class Sliders {
   private readonly sliders = [
     {
-      root: ".testimonials__slider",
-      prevButton: ".testimonials-nav__button_prev",
-      nextButton: ".testimonials-nav__button_next",
-      pagination: ".testimonials-nav__pagination",
+      selector: ".testimonials__slider",
+      options: {
+        loop: true,
+        speed: 800,
+        slidesPerView: 1,
+        spaceBetween: 20,
+        autoHeight: true,
+        autoplay: {
+          delay: 3000,
+        },
+        navigation: {
+          nextEl: ".testimonials-nav__button_next",
+          prevEl: ".testimonials-nav__button_prev",
+        },
+        pagination: {
+          el: ".testimonials-nav__pagination",
+          clickable: true,
+        },
+      },
     },
   ];
 
@@ -14,26 +29,9 @@ class Sliders {
 
   initSliders() {
     this.sliders.forEach(slider => {
-      if (document.querySelector(slider.root)) {
+      if (document.querySelector(slider.selector)) {
         //@ts-expect-error Swiper is connected globally
-        new Swiper(slider.root, {
-          loop: true,
-          speed: 800,
-          slidesPerView: 1,
-          spaceBetween: 20,
-          autoHeight: true,
-          autoplay: {
-            delay: 3000,
-          },
-          navigation: {
-            nextEl: slider.nextButton,
-            prevEl: slider.prevButton,
-          },
-          pagination: {
-            el: slider.pagination,
-            clickable: true,
-          },
-        });
+        new Swiper(slider.selector, slider.options);
       }
     });
   }

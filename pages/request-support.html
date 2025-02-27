@@ -9,7 +9,7 @@
   <body>
     <div class="wrapper">
       {{> header}}
-      <main style="background-image: url('/public/images/grad-bg.svg');">
+      <main style="background-image: url(&quot;/public/images/grad-bg.svg&quot;)">
         <section class="hero">
           <div class="hero__container container">
             <div class="hero__content">
@@ -22,6 +22,33 @@
             </div>
           </div>
         </section>
+
+        <section class="contact">
+          <div class="contact__container container">
+            <h2>Request Support</h2>
+            <div class="contact__body">
+              <div class="contact__column contact__content">
+                <h3 class="h5" style="text-align: center">
+                  Simply fill out the short form, and we’ll connect with you as soon as possible.
+                </h3>
+                <p>
+                  If you’re ready to get started right away, <a href="">download</a> our full intake form, complete it,
+                  and email it to <a href="mailto:info@allforcommunity.com">info@allforcommunity.com</a>. This small
+                  step will open the door to the resources, guidance, and support you need.
+                </p>
+                <p>
+                  Do not hesitate—we’re here for you, ready to walk beside you and your family toward a brighter,
+                  stronger future.
+                </p>
+              </div>
+              <div class="contact__column contact__form">FORM HERE</div>
+            </div>
+          </div>
+        </section>
+
+        {{> testimonials}}
+        <!-- --- -->
+        {{> qr}}
       </main>
       {{> footer}}
     </div>
