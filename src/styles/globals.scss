@@ -15,6 +15,18 @@ body {
 .wrapper {
   overflow: hidden;
   position: relative;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  main {
+    flex-grow: 1;
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    &:not(.main-home) {
+      padding-top: fluid(190, 206);
+    }
+  }
 }
 
 h1, .h1, //
@@ -61,6 +73,10 @@ a:not([class]) {
   @include hover {
     color: var(--color-orange);
   }
+}
+
+p:not([class]):not(:last-of-type) {
+  margin-bottom: rem(16);
 }
 
 .container {

@@ -9,7 +9,7 @@
     border-radius: rem(40);
     max-width: rem(884);
     position: relative;
-    padding: fluid(16, 60);
+    padding: fluid(16, 55);
     overflow: hidden;
     backdrop-filter: blur(4px);
     -webkit-backdrop-filter: blur(4px);
@@ -36,7 +36,7 @@
     &-links {
       display: flex;
       flex-wrap: wrap;
-      gap: rem(23);
+      gap: rem(20);
       @include x-small {
         flex-direction: column;
       }

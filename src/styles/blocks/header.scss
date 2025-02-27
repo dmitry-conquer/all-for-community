@@ -5,8 +5,9 @@
   position: absolute;
   width: 100%;
   top: 0;
-  padding-top: fluid(39, 89);
+  padding-top: fluid(27, 32);
   &_home {
+    padding-top: fluid(39, 89);
     .header__logo-link,
     .header__socials {
       display: none;
@@ -24,10 +25,10 @@
     justify-content: space-between;
     column-gap: rem(40);
   }
-
-  &__logo {
-  }
   &__socials {
+    @include medium {
+      display: none;
+    }
   }
   &__button-wrapper {
     display: flex;
@@ -136,6 +137,7 @@
     &.menu-item-has-children > .header__menu-link {
       &::before {
         content: "";
+        transition: transform 0.3s ease;
         flex-shrink: 0;
         width: rem(20);
         height: rem(8);
@@ -157,6 +159,11 @@
     transition: all 0.3s ease;
     @include hover {
       color: var(--color-orange);
+    }
+    &.is-active {
+      &::before {
+        transform: rotate(180deg);
+      }
     }
   }
   &__menu-sublist {
