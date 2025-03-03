@@ -31,7 +31,10 @@ class Sliders {
     this.sliders.forEach(slider => {
       if (document.querySelector(slider.selector)) {
         //@ts-expect-error Swiper is connected globally
-        new Swiper(slider.selector, slider.options);
+        if (typeof Swiper !== "undefined") {
+          //@ts-expect-error Swiper is connected globally
+          new Swiper(slider.selector, slider.options);
+        }
       }
     });
   }

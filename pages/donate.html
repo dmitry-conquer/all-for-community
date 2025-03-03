@@ -1,0 +1,149 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.4.7/swiper-bundle.min.css" />
+    <title>Donate</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      {{> header}}
+      <main style="background-image: url(&quot;/public/images/grad-bg.svg&quot;)">
+        <section class="hero">
+          <div class="hero__container container">
+            <div class="hero__content">
+              <div class="hero__content-inner">
+                <h1 class="hero__content-title">Supporting those who need it most.</h1>
+                <div class="hero__content-text">
+                  <p>We make essential social services accessible for individuals and families.</p>
+                  <p>We foster dignity, equity, and support.</p>
+                </div>
+              </div>
+              <div class="hero__links">
+                <a href="#" class="button button_green">Support Our Mission</a>
+                <a href="#" class="button button_blue">Tax Benefits for Donors</a>
+                <a href="#" class="button button_orange">Donate</a>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="full-section">
+          <div class="full-section__container container">
+            <div class="full-section__inner full-section__inner_no-x-padding">
+              <div class="full-section__header">
+                <h2>Support Our Mission!</h2>
+              </div>
+              <div
+                class="full-section__main full-section__main_top-image full-section__main_reverse full-section__main_gap-sm"
+              >
+                <div class="full-section__content full-section__content_num-list">
+                  <p>
+                    All for Community is dedicated to making social services accessible for individuals and families,
+                    fostering dignity, equity, and opportunity. Your tax-deductible donation directly supports our
+                    efforts to connect people to essential resources, ensuring brighter futures for all.
+                  </p>
+                  <br />
+                  <h3>How to Donate</h3>
+                  <ul>
+                    <li>
+                      We make it easy to contribute in a way that works for you. Donations can be made via check, credit
+                      card, wire transfer, or PayPal. Whether it’s a one-time gift or a recurring contribution, your
+                      support helps us continue to empower communities.
+                    </li>
+                    <li>
+                      Simply select a donation amount below or add your own! For questions or assistance, our team is
+                      here to help—connect with us through our live chat feature.
+                    </li>
+                    <li>
+                      Together, we can transform lives and build stronger communities. Thank you for your generosity!
+                    </li>
+                  </ul>
+                  <a href="" class="button button_orange">Donate Now</a>
+                </div>
+                <div class="full-section__image adaptive-image">
+                  <img src="/public/images/full-image-height.webp" alt="" loading="lazy" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="full-section">
+          <div class="full-section__container container">
+            <div class="full-section__inner full-section__inner_green">
+              <div class="full-section__header">
+                <h2>Tax Benefits for Donors</h2>
+                <p>
+                  Your donation to All for Community is tax-deductible under IRS guidelines for 501(c)(3) nonprofit
+                  organizations. By supporting our work, you not only help provide essential social services to
+                  individuals and families but also enjoy potential tax savings.
+                </p>
+              </div>
+              <div class="full-section__main">
+                <div class="full-section__content">
+                  <ul>
+                    <li>
+                      <h3 class="h5">Individuals</h3>
+                      <p>
+                        Charitable donations can generally be deducted up to 60% of your adjusted gross income (AGI),
+                        depending on the type of contribution.
+                      </p>
+                    </li>
+                    <li>
+                      <h3 class="h5">Businesses</h3>
+                      <p>Corporate donors can deduct up to 10% of their taxable income.</p>
+                    </li>
+                    <li>
+                      <h3 class="h5">In-Kind Donations</h3>
+                      <p>
+                        Non-cash contributions such as goods or services may also qualify for deductions, based on their
+                        fair market value.
+                      </p>
+                    </li>
+                  </ul>
+                </div>
+                <div class="full-section__image full-section__image_remove-mob adaptive-image">
+                  <img src="/public/images/full-image.webp" alt="" loading="lazy" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="full-section">
+          <div class="full-section__container container">
+            <div class="full-section__inner full-section__inner_no-x-padding">
+              <div class="full-section__main full-section__main_reverse full-section__main_gap-sm">
+                <div class="full-section__content">
+                  <h3 class="h4">Why Donate?</h3>
+                  <p>
+                    Your generosity directly impacts the lives of those in need, fostering dignity, equity, and support
+                    across our community. Plus, your contribution helps make a tangible difference while offering
+                    potential tax advantages.
+                  </p>
+                  <p>
+                    If you have questions about the tax-deductibility of your donation or would like assistance, please
+                    reach out to our team. Consult your tax advisor for specific guidance based on your financial
+                    situation.
+                  </p>
+                </div>
+                <div class="full-section__image adaptive-image">
+                  <img src="/public/images/full-image.webp" alt="" loading="lazy" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {{> testimonials}}
+        <!-- --- -->
+        {{> qr}}
+      </main>
+      {{> footer}}
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.4.7/swiper-bundle.min.js"></script>
+    <script type="module" src="../src/scripts/main.ts" defer></script>
+  </body>
+</html>
