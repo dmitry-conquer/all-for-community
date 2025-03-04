@@ -51,6 +51,18 @@
   &__content {
     flex: 0 1 50%;
     font-size: var(--text-big);
+    &_list-disc {
+      h3 {
+        margin-bottom: rem(16);
+      }
+      ul {
+        margin-left: rem(36);
+        margin-bottom: rem(16);
+        li {
+          list-style-type: disc;
+        }
+      }
+    }
     &_num-list {
       ul {
         counter-reset: list-counter;

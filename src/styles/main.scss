@@ -3,7 +3,10 @@
 @use "variables";
 @use "utils";
 @use "globals";
+@use "typography";
 @use "helpers" as *;
+
+@use "./libs/lenis";
 
 @use "./blocks/button";
 @use "./blocks/logo";
@@ -22,4 +25,6 @@
 @use "./blocks/qr";
 @use "./blocks/contact";
 @use "./blocks/full-section";
+@use "./blocks/grid-section";
+@use "./blocks/not-found";
 @use "./blocks/footer";

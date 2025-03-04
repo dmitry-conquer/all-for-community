@@ -1,0 +1,24 @@
+@use "../helpers/" as *;
+
+.not-found {
+  padding-bottom: var(--section-padding);
+  &__container {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    max-width: rem(764);
+    row-gap: rem(48);
+  }
+  &__image {
+    max-width: rem(367);
+    margin: 0 auto;
+  }
+  &__content {
+    text-align: center;
+    font-size: fluid(28, 40);
+  }
+  &__button {
+    max-width: max-content;
+    margin: 0 auto;
+  }
+}

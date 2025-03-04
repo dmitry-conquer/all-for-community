@@ -1,0 +1,38 @@
+@use "../helpers/" as *;
+
+.grid-section {
+  padding: var(--section-padding) 0;
+  &__container {
+  }
+  h2 {
+    text-align: center;
+  }
+  &__items {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: fluid(24, 32);
+  }
+  &__item {
+    padding: fluid(16, 24);
+    border-radius: rem(20);
+    font-size: var(--text-big);
+    &:nth-child(3n + 1) {
+      background-color: var(--color-light-green);
+    }
+    &:nth-child(3n + 2) {
+      background-color: var(--color-light-blue);
+    }
+    &:nth-child(3n + 3) {
+      background-color: var(--color-light-orange);
+    }
+    h3 {
+      text-align: center;
+    }
+    ul {
+      li {
+        list-style: disc;
+        margin-left: rem(24);
+      }
+    }
+  }
+}

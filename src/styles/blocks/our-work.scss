@@ -59,13 +59,13 @@
     &:not(:last-child) {
       margin-bottom: fluid(16, 32);
     }
-    &_blue {
+    &:nth-child(3n + 1) {
       background-color: var(--color-light-blue);
     }
-    &_green {
+    &:nth-child(3n + 2) {
       background-color: var(--color-light-green);
     }
-    &_orange {
+    &:nth-child(3n + 3) {
       background-color: var(--color-light-orange);
     }
   }
