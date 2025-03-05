@@ -8,9 +8,16 @@
   padding-top: fluid(27, 32);
   &_home {
     padding-top: fluid(39, 89);
+    pointer-events: none;
     .header__logo-link,
     .header__socials {
       display: none;
+    }
+    .header__button-wrapper {
+      pointer-events: auto;
+    }
+    .header__overlay {
+      pointer-events: auto;
     }
     .header__button-wrapper {
       margin-left: auto;
@@ -103,7 +110,7 @@
   }
 
   &__overlay {
-    padding: fluid(150, 170) rem(32) rem(32);
+    padding: fluid(150, 170) rem(32) rem(32) rem(20);
     background-color: var(--color-blue-overlay);
     position: fixed;
     top: 0;
@@ -117,6 +124,9 @@
     transition: all 0.4s ease;
     &:not(.is-active) {
       transform: translateX(100%);
+    }
+    @include small {
+      max-width: 100%;
     }
   }
   &__overlay-inner {
@@ -149,10 +159,10 @@
     }
   }
   &__menu-link {
-    font-size: rem(36);
+    font-size: fluid(32, 36);
     font-weight: 700;
     text-align: right;
-    line-height: 1.5;
+    line-height: 1.4;
     display: flex;
     align-items: center;
     column-gap: rem(18);

@@ -12,6 +12,9 @@
     flex-direction: column;
     row-gap: fluid(32, 60);
   }
+  &__logo-link img {
+    margin: 0 auto;
+  }
   &__top {
     display: flex;
     align-items: center;
