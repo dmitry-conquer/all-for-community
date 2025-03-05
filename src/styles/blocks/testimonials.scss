@@ -73,6 +73,7 @@
     }
   }
   &__pagination {
+    position: static !important;
     .swiper-pagination-bullet {
       transition: all 0.3s ease;
       width: rem(20);
