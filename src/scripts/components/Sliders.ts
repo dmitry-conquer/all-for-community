@@ -4,13 +4,10 @@ class Sliders {
       selector: ".testimonials__slider",
       options: {
         loop: true,
-        speed: 800,
+        speed: 1000,
         slidesPerView: 1,
         spaceBetween: 20,
         autoHeight: true,
-        autoplay: {
-          delay: 3000,
-        },
         navigation: {
           nextEl: ".testimonials-nav__button_next",
           prevEl: ".testimonials-nav__button_prev",

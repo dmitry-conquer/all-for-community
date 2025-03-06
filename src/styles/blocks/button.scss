@@ -20,6 +20,7 @@
   }
   @include x-small {
     width: 100%;
+    column-gap: rem(10);
   }
   &::after {
     content: "";

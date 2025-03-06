@@ -60,6 +60,9 @@
         margin-bottom: rem(16);
         li {
           list-style-type: disc;
+          &:not(:last-of-type) {
+            margin-bottom: rem(10) !important;
+          }
         }
       }
     }

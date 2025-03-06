@@ -15,12 +15,13 @@ document.addEventListener("DOMContentLoaded", () => {
   new Header();
   AOS.init({
     once: true,
-    duration: 1000,
+    duration: 700,
   });
 
   if (acfData.smoothScroll) {
     new Lenis({
       autoRaf: true,
+      anchors: true,
     });
   }
 });
