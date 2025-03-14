@@ -1,0 +1,32 @@
+@use "../helpers" as *;
+
+.to-top-button {
+  position: fixed;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%) translateY(100%);
+  z-index: 9999;
+  width: rem(50);
+  height: rem(25);
+  background-color: red;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  background-color: #008a0775;
+  backdrop-filter: blur(10px);
+  svg {
+    color: #fff;
+    width: rem(30);
+    height: rem(40);
+  }
+  &.is-visible {
+    opacity: 1;
+    visibility: visible;
+    transform: translateX(-50%) translateY(0);
+  }
+}

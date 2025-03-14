@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.4.7/swiper-bundle.min.css" />
     <title>Home page</title>
   </head>
-  <body>
+  <body id="top">
     <div class="wrapper">
       {{> header-home}}
       <main class="main-home">
@@ -342,6 +342,17 @@
         {{> qr}}
       </main>
       {{> footer}}
+      <a href="#top" title="Back to top" aria-label="Back to top" data-js-to-top-button class="to-top-button">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke-width="1.5"
+          stroke="currentColor"
+        >
+          <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 15.75 7.5-7.5 7.5 7.5" />
+        </svg>
+      </a>
     </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.4.7/swiper-bundle.min.js"></script>
     <script type="module" src="../src/scripts/main.ts" defer></script>
