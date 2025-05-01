@@ -27,6 +27,9 @@
     }
   }
   &__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     background-color: var(--color-light-blue);
     flex: 0 1 rem(1037);
     @include medium {
